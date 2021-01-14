@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.MessagesFragment">
+
+    <TabHost
+        android:id="@+id/messages_tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="38dp">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/messages_tabHost_tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/background">
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/messages_swipeRefreshLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white">
+                        <ListView
+                            android:id="@+id/messages_tabHost_fragment1_listView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/messages_tabHost_tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/background">
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/messages_swipeRefreshLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white">
+                        <ListView
+                            android:id="@+id/messages_tabHost_fragment2_listView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

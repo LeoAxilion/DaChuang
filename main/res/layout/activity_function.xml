@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/function_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FunctionActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/function_searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/search_background"
+        android:focusableInTouchMode="true">
+
+        <FrameLayout
+            android:id="@+id/function_searchBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/function_search"/>
+
+        </FrameLayout>
+        
+        <EditText
+            android:id="@+id/function_searchText"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@null"/>
+
+        <FrameLayout
+            android:id="@+id/function_mediaControl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/function_mediaControlImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/media_play"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FuncButtons"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/FFFFFF"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/funcButton1_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_logo_onclick"
+                android:alpha="0"/>
+            <Button
+                android:id="@+id/funcButton1_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_logo_no"
+                android:alpha="1"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/funcButton2_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/school_logo_onclick"
+                android:alpha="0"/>
+            <Button
+                android:id="@+id/funcButton2_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/school_logo_no"
+                android:alpha="1"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/funcButton3_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/message_logo_onclick"
+                android:alpha="0"/>
+            <Button
+                android:id="@+id/funcButton3_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/message_logo_no"
+                android:alpha="1"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/funcButton4_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/idea_logo_onclick"
+                android:alpha="0"/>
+            <Button
+                android:id="@+id/funcButton4_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/idea_logo_no"
+                android:alpha="1"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <Button
+                android:id="@+id/funcButton5_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_logo_onclick"
+                android:alpha="0"/>
+            <Button
+                android:id="@+id/funcButton5_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_logo_no"
+                android:alpha="1"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/FuncViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/FuncButtons"
+        android:layout_below="@id/function_searchLayout">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

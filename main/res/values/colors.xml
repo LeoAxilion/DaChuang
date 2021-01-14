@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#393939</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="FFFFFF">#FFFFFF</color>
+    <color name="background">#e5e5e5</color>
+    <color name="text_blue">#006BF7</color>
+    <color name="white">#FFFAFAFA</color>
+    <color name="login_click">#5e76fa</color>
+    <color name="register_click">#b4b4b3</color>
+    <color name="text_black">#393939</color>
+    <color name="search_background">#F3F3F3</color>
+    <color name="colorLightBlack">#717171</color>
+    <color name="colorWhite">#f9f9f9</color>
+</resources>
